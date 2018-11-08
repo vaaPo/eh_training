@@ -1,0 +1,18 @@
+{
+  "name": "pervoserver",
+  "version": "1.0.1",
+  "description": "tiny http demo server",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ignore",
+    "test",
+    "http",
+    "server"
+  ],
+  "author": "vaapo",
+  "license": "ISC"
+}

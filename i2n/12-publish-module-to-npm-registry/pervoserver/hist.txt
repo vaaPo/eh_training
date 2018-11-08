@@ -1,0 +1,45 @@
+ 2141  mkdir 12-publish-module-to-npm-registry
+ 2142  cd 12-publish-module-to-npm-registry/
+ 2143  npm adduser
+ 2144  cp -r ../11-http-server/ .
+ 2145  ls -la
+ 2146  mv 11-http-server/* .
+ 2147  ls -la
+ 2148  rmdir 11-http-server
+ 2149  ls -la
+ 2150  npm init
+ 2151  mkdir server
+ 2152  ls-la
+ 2153  ls -al
+ 2154  mv server.js server
+ 2155  cd server/
+ 2156  npm init
+ 2157  ls -la
+ 2158  npm publish 
+ 2159  npm adduser
+ 2160  npm publish 
+ 2161  ls -la
+ 2162  cat package.json 
+ 2163  npm -v
+ 2164  npm login
+ 2165  npm whoami
+ 2166  ls -al
+ 2167  npm adduser
+ 2168  npm publish
+ 2169  cd ..
+ 2170  mv server pervoserver
+ 2171  cd pervoserver/
+ 2172  ls
+ 2173  mv server.js pervoserver.js
+ 2174  npm init
+ 2175  ls -la
+ 2176  cat package.json 
+ 2177  npm publish
+ 2178  npm version patch
+ 2179  npm publish
+ 2180  npm unpublish pervoserver
+ 2181  npm unpublish pervoserver --force
+ 2182  history
+ 2183  cat hist.txt
+ 2184  cat > hist.txt
+ 2185  history > hist.txt

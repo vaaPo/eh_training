@@ -1,0 +1,15 @@
+{
+  "name": "sayhelloworld",
+  "version": "0.1.0",
+  "description": "Write Hellow World out o the console",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "author": "Paavo Muranen",
+  "license": "MIT"
+}
