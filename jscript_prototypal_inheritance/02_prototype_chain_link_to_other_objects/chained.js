@@ -6,3 +6,4 @@ const protoObj={
 }
 Object.setPrototypeOf(obj,protoObj)
 console.log(obj.lastName)
+//see in console
