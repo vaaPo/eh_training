@@ -27,7 +27,7 @@ console.log(bar.lastname)
 //}
 
 const xyz={
-    set name(){
+    set name(name){
         this.currentName=name
     }
 }
@@ -41,7 +41,8 @@ const zy={
     lastname:'clark'
 }
 Object.setPrototypeOf(zy,xyz)
-zy.name='paula' //doesnt change due writable is false
+zy.name='paula' //allowed to change currentName due setter function
+
 console.log(zy)
 console.log(xyz)
 console.log(xyz.name)
