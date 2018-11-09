@@ -1,0 +1,20 @@
+The Beginners guide to reactjs
+
+https://github.com/kentcdodds/ama/issues/107
+https://www.youtube.com/watch?v=t2CZsbzbbNc&feature=youtu.be
+https://github.com/eggheadio-projects/the-beginner-s-guide-to-reactjs
+
+
+paavo@silber:~/src/git3/eh_training/beginner_react/the-beginner-s-guide-to-reactjs$ npx browser-sync start --server --files "**/index.html" --no-open --no-notify --directory
+npx: installed 338 in 18.928s
+[Browsersync] Access URLs:
+ --------------------------------------
+       Local: http://localhost:3000
+    External: http://192.168.8.106:3000
+ --------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ --------------------------------------
+[Browsersync] Serving files from: ./
+[Browsersync] Watching files...
+
