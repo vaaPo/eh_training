@@ -12,13 +12,45 @@
     // element.textContent = 'Hello World'
     // element.className = 'container'
     // rootElement.appendChild(element)
+
+    const element0 = React.createElement(
+      'div', {
+        className: 'container'
+      },
+      'Where are you guys, I am element0',
+      'Goodbye World!'
+    )
+    console.log(element0)
+    console.log(element0.props)
+    console.log(element0.props.className)
+    console.log(element0.props.children)
+
     const element = React.createElement(
       'div', {
         className: 'container',
         pimpom: 'zumbidum',
         children: 'Hello World',
-        friends: ['foobar','xyzzy']
+        friends: ['foobar', 'xyzzy']
       })
+
+    const element2 = React.createElement(
+      'div', {
+        className: 'container',
+        pimpom: 'zumbidum',
+        children: ['Hello World', 'Goodbuy cruel World!'],
+        friends: ['foobar', 'xyzzy']
+      })
+
+    const element3 = React.createElement(
+      'div', {
+        className: 'container',
+        pimpom: 'zumbidum',
+        children: ['Hello World', 'Goodbuy cruel World!'],
+        friends: ['foobar', 'xyzzy']
+      },
+      'jumprahuti',
+      'sikanauta'
+    )
 
     console.log(element)
     console.log(element.props)
@@ -26,8 +58,9 @@
     console.log(element.props.children)
     console.log(element.props.friends)
     console.log(rootElement)
-    
-    
-    ReactDOM.render(element, rootElement)
+        ReactDOM.render(element0, rootElement)
+    //    ReactDOM.render(element, rootElement)
+    //    ReactDOM.render(element2, rootElement)
+    //    ReactDOM.render(element3, rootElement)
   </script>
 </body>

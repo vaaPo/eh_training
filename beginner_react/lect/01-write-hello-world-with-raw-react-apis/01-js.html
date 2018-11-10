@@ -1,6 +1,8 @@
 <body>
+    <!-- This is a comment -->
     <div id="root"></div>
     <script type="text/javascript">
+    // this is javascript comment
     // playing a bit with the idea
     // appendChild(element2)
     const rootElement=document.getElementById('root')
@@ -8,14 +10,14 @@
     const element2=document.createElement('div')
     element.textContent='Hello world'
     element.className='container'
-    rootElement.appendChild(element)
+    rootElement.appendChild(element)   // in react we use render-method
     console.log(element)
     console.log(rootElement)
     console.log(element.textContent)
 
     element2.textContent='PIMPOM'
     element2.className='container'
-    rootElement.appendChild(element2)
+    rootElement.appendChild(element2) // in react we use render-method
     console.log(element2)
     console.log(rootElement)
     console.log(element2.textContent)
