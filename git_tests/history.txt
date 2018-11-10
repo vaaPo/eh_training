@@ -1,0 +1,55 @@
+// generate ssh keys for the email used in github
+// make this email public, so no hassle with all no-reply 
+// privacy stuff
+ ssh-keygen -t rsa -C "ripraptiptop@gmail.com"
+ cat ripraptiptop@gmail.com_id_rsa.pub 
+// paste the key to github prefs
+
+// in Ubuntu gnupg2 is needed the pgp is retarded
+sudo apt-get install gnupg2
+
+// and pgp2 is too clever, it requires more entropy than I can generate
+// can't say why it is so, but this works
+sudo apt-get install rng-tools
+
+// run this marvellous entroy thingie so the generation doesn'test
+// die due lack of entropy
+sudo rngd -r /dev/urandom
+cat /proc/sys/kernel/random/entropy_avail
+
+// generate keys - hooray the variation in options!
+gpg2 --full-gen-key
+
+// extract key for github
+gpg2 --list-secret-keys --keyid-format LONG
+gpg2 --armor --export 78609F9A4D0660AE > gpg2-to-github.txt
+// paste to github prefs gpg
+
+// enable key for git
+git config --global user.signingkey 78609F9A4D0660AE
+
+// in ubuntu the braindamaged gpg is causing trouble
+ git config --global gpg.program gpg2
+ ls -alrt ~/.gnupg
+
+// tweak the pgp to bash shell
+test -r ~/.bash_profile && echo 'export GPG_TTY=$(tty)' >> ~/.bash_profile
+echo 'export GPG_TTY=$(tty)' >> ~/.profile
+cat ~/.profile
+export GPG_TTY=$(tty)
+
+// test that it works
+ 2084  ssh -T git@github.com
+
+// then test that it works also from code
+ 2109  cd eh_training/
+ 2112  git remote -v
+
+ // change remote url from https to git
+ git remote set-url origin git@github.com:vaaPo/eh_training.git
+ git remote -v
+ mkdir git_tests
+ git add git_tests
+ git commit
+
+ code
