@@ -1,3 +1,6 @@
 Did change git to work over ssh and also created the gpg2 keys.
 Oh boy what a task, had lack of entropy and such shit with the gpg2.
 This directory is reserved just to test that my git setup is ok and usable from VisualStudio code.
+
+And it seems it works beautifully from VisualStudio code.
+No more ugly enter user and pass to git stuff.
