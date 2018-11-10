@@ -1,0 +1,48 @@
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@16.3.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.3.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+  <script type="text/babel">
+    const rootElement = document.getElementById('root')
+// const element = React.createElement('div', {
+//   className: 'container',
+//   children: 'Hello World',
+// })
+    const content = 'Hello World from CONTENT'
+    const myClassName = 'container'
+    const props = {
+      className: 'container_from_props',
+      children: 'Hello Worldx from PROPS',
+    }
+const element = <div {...props} />
+
+// first try to override className
+const element2 = (
+    <div className={myClassName+'__hi-there'}>{(()=>content)()} </div>
+)
+
+const element3 = (<div {...props} />)
+const element4 = (<div className="my-class" {...props} />)
+const element5 = (<div {...props} className="my-class" />)
+const element6 = (<div {...props} className="my-class" children="CARAMBA OVERRIDES" />)
+const element7 = (<div {...props}> I can override!</div>)
+
+console.log(element)
+console.log(element2)
+console.log(element3)
+console.log(element4)
+console.log(element5)
+console.log(element6)
+console.log(element7)
+
+//ReactDOM.render(element, rootElement)
+//ReactDOM.render(element2, rootElement)
+//ReactDOM.render(element3, rootElement)
+//ReactDOM.render(element4, rootElement)
+//ReactDOM.render(element5, rootElement)
+//ReactDOM.render(element6, rootElement)
+ReactDOM.render(element7, rootElement)
+
+</script>
+</body>
