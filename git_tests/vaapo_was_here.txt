@@ -4,3 +4,5 @@ This directory is reserved just to test that my git setup is ok and usable from 
 
 And it seems it works beautifully from VisualStudio code.
 No more ugly enter user and pass to git stuff.
+
+Now lets see gpg commit?
