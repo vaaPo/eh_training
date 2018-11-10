@@ -1,0 +1,11 @@
+npx https://gist.github.com/vaaPo/91a157d1c6b8e1fb67d6501eb8443d46
+
+npx https://gist.github.com/vaaPo/20ad5b17735495a70246ed2c18880b68
+hub.com/vaaPo/20ad5b17735495a70246ed2c18880b68
+npx: installed 1 in 4.203s
+* [HookyQR.beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+* [humao.rest-client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+* [ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+* [msjsdiag.debugger-for-chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+* [WallabyJs.quokka-vscode](https://marketplace.visualstudio.com/items?itemName=WallabyJs.quokka-vscode)
+* [xabikos.ReactSnippets](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets)
