@@ -1,0 +1,11 @@
+{
+  "name": "08-egghead-this-in-class-bodies",
+  "version": "1.0.0",
+  "description": "egghead course for this",
+  "main": "script_part2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
