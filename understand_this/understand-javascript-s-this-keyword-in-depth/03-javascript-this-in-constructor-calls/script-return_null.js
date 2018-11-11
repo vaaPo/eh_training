@@ -5,7 +5,7 @@ function Person(firstName, lastName) {
   this.lastName = lastName;
   console.log(this);
   
-  // return this; So note that there is no return statement, so this is returned automatically when new object is constructed
+  return null;  // has no impact, 
 }
 
 const person = new Person("Jane", "Doe");
