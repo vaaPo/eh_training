@@ -8,7 +8,7 @@ const HOC = (InnerComponent) => class extends React.Component {
     this.state = {count: 0}
   }
   update(){
-    this.setState({count: this.state.count + 1})
+    this.setState({count: this.state.count + 1})            // this is called from the Button (stateless) and Label (full class)
   }
   componentWillMount(){
     console.log('will mount')
@@ -44,7 +44,7 @@ class Label extends React.Component {
   componentWillMount(){
     console.log('label will mount')
   }
-  render(){
+  render(){               // this.props.update refers to HOC update()
     return (
       <label onMouseMove={this.props.update}>
       {this.props.children} - {this.props.count}
