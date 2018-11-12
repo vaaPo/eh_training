@@ -8,6 +8,8 @@
  * I can now pipe that code into Node. Everything works as intended.
  * 
  *  */
+//FIXME learn to babel this
+//TODO learn to setup babel correctly
 
 class Person {
    sayHi = () => {

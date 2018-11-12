@@ -4,6 +4,7 @@ $node script_part2.js   // this fails - arrow not yet supported in class
 //so somekind of commandline trickery is needed to babel translitterate the code 
 // something like this
 // perhaps small babel course is needed
+//TODO fix babel
 
 npx create-react-app playground
 npm init
