@@ -1,7 +1,7 @@
 var port = process.env.PORT || 3000;
 
 var lessons = [
-  "01-intro",
+  "01-react-react-fundamentals-development-environment-setup",
   "02-render",
   "03-properties",
   "04-state",
@@ -25,10 +25,11 @@ var lessons = [
 
 var entry = {}
 lessons.forEach(function(lesson){
-  entry[lesson] = './lessons/' + lesson + '/main.js'
+  entry[lesson] = './lessons/' + lesson + '/index.js'
 })
 
 module.exports = {
+  mode: 'development',
   entry: entry,
   output: {
     path: __dirname + './lessons/',
