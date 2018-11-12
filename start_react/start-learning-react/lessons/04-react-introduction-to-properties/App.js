@@ -10,7 +10,7 @@ class App extends React.Component {
    let cat = this.props.cat
     return (<div>
             <h1>{cat} {txt}</h1>
-            <h1>Hello Series</h1>
+            <h1>App Hello</h1>
             </div>
     )
   }
@@ -23,7 +23,7 @@ App.propTypes = {
 
 
 App.defaultProps = {
-  txt: "this is the default text"
+  txt: "App this is the default text, no override"
 }
 
 export default App
