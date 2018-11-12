@@ -31,6 +31,8 @@ class App extends React.Component {
   }
 }
 
+// PAY attention Input with capital I above
+
 class Input extends React.Component {
   render(){
     return <div><input ref="input" type="text" onChange={this.props.update}/></div>

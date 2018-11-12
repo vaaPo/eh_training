@@ -13,7 +13,7 @@ const Button = (props) =>
 
 class Heart extends React.Component {
   render(){
-    return <span>&hearts;</span>
+    return <span>&hearts;&hearts;</span>
   }
 }
 
