@@ -1,3 +1,16 @@
+Install create-react-app globally:
+npm i create-react-app -g
+//npm WARN checkPermissions Missing write access to /usr/lib/node_modules
+sudo npm i create-react-app -g
+cd ~/src/git3/eh_training/start_react
+create-react-app vaapo-react-app
+cd vaapo-react-app
+npm start
+
+//files not needed
+rm App.css App.test.js index.css logo.svg serviceWorker.js
+
+
 ```bash
 npm install
 npm start
