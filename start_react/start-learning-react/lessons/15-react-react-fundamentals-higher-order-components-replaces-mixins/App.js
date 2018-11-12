@@ -2,7 +2,9 @@
 
 import React from 'react';
 
-const HOC = (InnerComponent) => class extends React.Component {
+//The purpose of a higher order component is to share common functionality or information between multiple components.
+// used for LabelHOC =HOC(Label) and  Button = HOC((props) => )
+const HOC = (InnerComponent) => class extends React.Component {     
   constructor(){
     super();
     this.state = {count: 0}
