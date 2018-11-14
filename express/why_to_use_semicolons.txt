@@ -1,0 +1,20 @@
+There is interesting discussion on the first module of the getting started videos.
+The point of using semicolons is pretty well articulated, so please check it.
+
+//TODO investigate the following semicolon mambojambo
+Nick
+about 3 years ago
+Ben, Ok, I get it. You write code for yourself :--)
+But, semi-colons are considered "idiomatic" because they are defined as such by the inventors of the language and by every known style guide, save the recently introduced and misnomer'ed "JavaScript standard". But you miss a larger point.
+Not using semi-colons is NOT merely a matter of style, but a conscious decision to write buggier code. That advice has been stressed repeatedly over the years by both Douglas Rockford (see below) and JavaScript creator Brendan Eich, who says that relying on Automatic Semicolon Insertion (ASI) is "reckless". In other words, semicolons are considered "idiomatic" because they are a consensus "best practice".
+Bugs that would be avoided with the use of the semi-colon are some of the nastiest to find. I've got a co-worker who only recently agreed to use semi-colons when the team wasted 4 hours tracking down a bug of his that would have been avoided with a semi-colon. Being an old guy (ouch), I've seen this movie before. Experiments with the unconventional ends as the pain of unnecessary bugs always trumps stylistic preference.
+You're setting an example for your students, many of whom are new to JavaScript. I think this should be their guidance:
+1) Google JavaScript Style Guide http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml#Semicolons
+"Always use semicolons. Relying on implicit insertion can cause subtle, hard to debug problems. Don't do it. You're better than that."
+The Google guide also describes the dangers of not using semi-colons.
+2) Rockford's definite Code Conventions for the JavaScript Programming Language http://javascript.crockford.com/code.html Put a ; (semicolon) at the end of every simple statement. Note that an assignment statement that is assigning a function literal or object literal is still an assignment statement and must end with a semicolon. JavaScript allows any expression to be used as a statement. This can mask some errors, particularly in the presence of semicolon insertion.
+3) jQuery Style Guide https://contribute.jquery.org/style-guide/js/ "Semicolons Use them. Never rely on ASI."
+4) AirBnB Style Guide. https://github.com/airbnb/javascript "Semicolons • Yup"
+Finally, the collaboration from 20+ leading JS practitioners that endeavors to define "idiomatic": 5) idiomatic.js https://github.com/rwaldron/idiomatic.js "We do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected."
+"Arguments over style are pointless. There should be a style guide, and you should follow it" Rebecca Murphey
+"Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." Idan Gazit
