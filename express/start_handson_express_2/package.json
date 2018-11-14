@@ -1,7 +1,7 @@
 {
-  "name": "start_handson_express",
+  "name": "start_handson_express_2",
   "version": "1.0.0",
-  "description": "'''bash mkdir start_handson_express git add start_handson_express cd start_handson_express npm init -y npm i -S express echo \"node_modules\" > ./.gitignore touch index.js code",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
     "nodemon": "^1.18.6"

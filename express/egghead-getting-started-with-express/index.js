@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var User = require('./db').User;
 
+
 app.engine('hbs', engines.handlebars);
 
 app.set('views', './views');
@@ -14,6 +15,7 @@ app.set('view engine', 'hbs');
 
 app.use('/profilepics', express.static('images'));
 app.use(bodyParser.urlencoded({ extended: true }));
+
 
 app.get('/favicon.ico', function (req, res) {
   res.end();
@@ -55,6 +57,10 @@ app.get('/error/:username', function (req, res) {
 var userRouter = require('./username');
 app.use('/:username', userRouter);
 
-var server = app.listen(3000, function () {
+// TODO why these calls are having so minimal set of parameters, so they are too easy to omit, all console.logs could be declaratively dynamic!
+var server = app.listen(port=3000, hostname='localhost', callback=function () {
   console.log('Server running at http://localhost:' + server.address().port);
+  console.log('         listen port              : '+ server.address().port);
+  console.log('         listen address           : '+ server.address().address);
+
 });

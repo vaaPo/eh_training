@@ -17,4 +17,8 @@ npm start
 npm run dev
 '''
 
+The second lesson has no example code, luckily it can be found from here
+https://github.com/bclinkinbeard/egghead-getting-started-with-express/blob/02-basic-routing/index.js
+
+
 
