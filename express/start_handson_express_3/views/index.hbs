@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Index HBS</title>
+</head>
+
+<body>
+    <h1>Handlebars template driven</h1>
+    <u1>
+        {{#each users as |user|}}
+        <li><a href="/{{user.username}}">{{user.name.full}}</a></li>
+        {{/each}}
+    </u1>
+
+</body>
+
+</html>
